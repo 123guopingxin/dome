@@ -1,0 +1,6 @@
+用户评价页：http://www.shushi100.com/project/
+注册：http://www.shushi100.com/signup
+登录：http://www.shushi100.com/login
+首页：http://www.shushi100.com/
+详情页：http://www.shushi100.com/mall/101092.html
+购物车：

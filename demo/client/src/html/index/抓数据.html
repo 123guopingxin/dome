@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+			<script>
+			
+		// 抓主商品页数据
+			/* http://www.shushi100.com/mall/category-kongtiao/ */
+		   var lis=document.querySelector(".lwx_prd_list_content");
+			var box=lis.querySelectorAll("dd");
+			
+			var data=new Array();
+		for(var i=0,len=box.length;i<len;i++){
+			var ele=box[i];
+		
+			var img=ele.querySelector(".lwx_prd_image").querySelector("img").src;
+
+			var price=Number(ele.querySelectorAll(".lwx_plist_price")[0].innerText.substr(1));
+			var goods_name=ele.querySelector(".lwx_plist_name ").innerText;
+			var orange_color=ele.querySelector(".orange_color ").innerText;
+			var pro_coupon= ele.querySelector(".pro_coupon").innerText;
+			var number=Number(ele.querySelector("b").innerText);
+			
+			// 将提取的数据放到一个对象中
+			var o={};
+			o.img=img;
+			o.price=price;
+			o.goods_name=goods_name;
+			o.orange_color=orange_color;
+			o.pro_coupon=pro_coupon;
+			o.number=number;
+			
+			data.push(o);
+		}
+		
+		console.log(JSON.stringify(data)); 
+		</script>
+	</body>
+</html>

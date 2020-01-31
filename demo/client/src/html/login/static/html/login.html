@@ -1,0 +1,66 @@
+
+		<div class="login1">
+			<h3 class="regist-title">新用户注册</h3>
+		<div class="form">
+						
+			<div class="item">
+				<span class="label"><b class="ftx04"></b>昵称(选填)：</span>
+				<div class="fl">
+					<input type="text" id="nickname" name="UserForm[nickname]" class="text" tabindex="4" />
+				</div>
+			</div>
+			
+			<div class="item">
+				<span class="label"><b class="ftx04">*</b>手机号码：</span>
+				<div class="fl">
+					<input placeholder="请输入手机号码" type="text" id="mobile" name="UserForm[username]" class="text" tabindex="4" />
+				</div>
+			</div>
+			
+			<!-- 验证码 -->
+			  <div class="form-item image-code"><span class="label">验证码</span>
+			    <div class="content"><input type="text" maxlength="6" placeholder="请输入验证码">
+			        <div class="image-code-box">
+			            <canvas width="160" height="45" id="captcha"></canvas>
+			        </div>
+			        <div class="form-group__message">请输入图形验证码</div>
+			    </div>
+			</div>
+			
+			
+			<div id="o-password">
+				<div class="item">
+					<span class="label"><b class="ftx04">*</b>设置密码：</span>
+					<div class="fl">
+						<input type="password" id="pwd" name="UserForm[password]" class="text" tabindex="2" placeholder="请输入3-6位数字字母"/>
+					 	<span class="aa"> </span>
+					</div>
+				</div>
+				
+				<div class="item">
+					<span class="label"><b class="ftx04">*</b>确认密码：</span>
+					<div class="fl">
+						<input type="password" id="pwd2" name="UserForm[check_password]" class="text" tabindex="3" placeholder="确认密码"/>
+					
+					</div>
+				</div>
+			</div>
+			
+			<!-- 是否同意条款 -->
+			<div style="height:30px;">
+				<span class="label">&nbsp;</span>
+				<!-- 输入框加checked="checked" ，默认选中 -->
+				<input id="protocol" type="checkbox" name="UserForm[checkbox]" />我已阅读并同意《 <a href="#" class="lwx_xieyi_click protocolCss">舒适100网服务条款</a>
+				》
+				<label id="protocol_error" class="error">
+					<div>
+						<div></div>
+					</div>
+				</label>
+			</div>
+			
+			<div class="clearfix">
+				<span class="label"></span>
+				<button type="button" class="btn-img btn-regist" name="signup-button">注 册</button> </div>
+		    </div>
+			</div>
